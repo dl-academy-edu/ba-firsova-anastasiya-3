@@ -1,0 +1,53 @@
+
+body {
+  font-family: 'Gilroy', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+a, p{
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+
+
+
+// Подключение компонентов
+@import "./header/header";
+@import "./about-me/about-me";
+@import "./portfolio/portfolio";
+@import "./skills/skills";
+@import "./form-blog/form-blog";
+@import "./posts/posts";
+@import "./pagination/pagination";
+@import "./footer/footer";
+@import "./sign-in/sign-in";
+@import "./register/register";
+@import "./send-message/send-message";
+@import "./slider/slider";
+@import "./button-to-top/button-to-top.scss";

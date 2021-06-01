@@ -1,0 +1,83 @@
+<form action="https://echo.htmlacademy.ru" method="POST" class="form-blog">
+    <div class="form-blog__wrapper">
+        <fieldset class="form-blog__field">
+            <legend class="form-blog__legend" >Tags</legend>
+            <div class="form-blog__tags"></div>
+        </fieldset>
+         <fieldset class="form-blog__field">
+            <legend class="form-blog__legend">Views</legend>
+            <ul class="form-blog__views-list">
+                <li class="form-blog__views-item">
+                    <input type="radio" id="radio-1" name="views" value="100-500" class="form-blog__input visually-hidden">
+                    <label for="radio-1" class="form-blog__label">100-500</label>
+                </li>
+                <li class="form-blog__views-item">
+                    <input type="radio" id="radio-2" name="views" value="500-1000" class="form-blog__input visually-hidden">
+                    <label for="radio-2" class="form-blog__label">500-1000</label>
+                </li>
+                <li class="form-blog__views-item">
+                    <input type="radio" id="radio-3" name="views" value="1000-2000" class="form-blog__input visually-hidden">
+                    <label for="radio-3" class="form-blog__label">1000-2000</label>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset class="form-blog__field">
+            <legend class="form-blog__legend">Comments</legend>
+            <ul class="form-blog__comments-list">
+                <li class="form-blog__comments-item">
+                    <input name="selectOf" type="checkbox" id="checkbox-9" value="0" class="form-blog__input visually-hidden">
+                    <label for="checkbox-9" class="form-blog__label">0</label>
+                </li>
+                <li class="form-blog__comments-item">
+                    <input name="selectOf" type="checkbox" id="checkbox-10" value="0-1" class="form-blog__input visually-hidden">
+                    <label for="checkbox-10" class="form-blog__label">0-1</label>
+                </li>
+                <li class="form-blog__comments-item">
+                    <input name="selectOf" type="checkbox" id="checkbox-11" value="1-50" class="form-blog__input visually-hidden">
+                    <label for="checkbox-11" class="form-blog__label">1-50</label>
+                </li>
+
+            </ul>
+        </fieldset>
+        <fieldset class="form-blog__field">
+            <legend class="form-blog__legend">How show?</legend>
+            <ul class="form-blog__show-list">
+                <li class="form-blog__show-item">
+                    <input type="radio" id="radio-s5" name="show" value="show-5" class="form-blog__input visually-hidden">
+                    <label for="radio-s5" class="form-blog__label">show 5</label>
+               </li>
+                <li class="form-blog__show-item">
+                    <input type="radio" id="radio-s10" name="show" value="show-10" class="form-blog__input visually-hidden">
+                    <label for="radio-s10" class="form-blog__label">show 10</label>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset class="form-blog__field">
+            <legend class="form-blog__legend">Sort by</legend>
+            <ul class="form-blog__sort-list">
+                <li class="form-blog__sort-item">
+                    <input type="radio" id="radio-date" name="sorting" value="date" class="form-blog__input visually-hidden">
+                    <label for="radio-date" class="form-blog__label">date</label>
+                </li>
+                <li class="form-blog__sort-item">
+                    <input type="radio" id="radio-title" name="sorting" value="title" class="form-blog__input visually-hidden">
+                    <label for="radio-title" class="form-blog__label">title</label>
+                </li>
+                <li class="form-blog__sort-item">
+                    <input type="radio" id="radio-views" name="sorting" value="views" class="form-blog__input visually-hidden">
+                    <label for="radio-views" class="form-blog__label">views</label>
+                </li>
+            </ul>
+        </fieldset>
+        <div class="from-blog__wrap">
+            <button type="submit" class="form-blog__btn">reset form</button>
+            <button type="submit"  class="form-blog__button">Reset</button>
+        </div>
+        
+    </div>
+    <fieldset class="form-blog__field">
+        <input type="search" name="search" id="search" class="form-blog__input">
+        <label for="search" aria-label="Search"></label>
+        <button type="submit" class="form-blog__button">Search</button>
+    </fieldset>
+</form>

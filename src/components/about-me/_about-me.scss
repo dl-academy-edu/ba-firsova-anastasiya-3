@@ -1,0 +1,75 @@
+.about-me{
+    margin: 64px auto 0;
+    background-color: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__title{
+        margin-top: 60px;
+        font-weight: bold;
+        font-size: 34px;
+        line-height: 41px;
+        text-align: center;
+        color: #070707;
+    }
+    &__desc{
+        font-size: 18px;
+        line-height: 21px;
+        padding: 15px 15px;
+        margin-top: 32px;
+        margin-right: 83px;
+        max-width: 454px;
+        border: 2.5px solid #070707;
+        position: relative;
+        &::before, &::after{
+          content: '';
+          top: 95px;
+          left: 407px;
+          position: absolute;
+          border: 22px solid transparent;
+          border-top: 22px solid #070707;
+        }
+        &::after {
+          border-top: 22px solid white;
+          top: 92px;
+         }
+         &:nth-child(2){
+            margin-top: 30px;
+            max-width: 444px;
+            &::before, &::after{
+              content: '';
+              top: 114px;
+              left: 407px;
+              position: absolute;
+              border: 22px solid transparent;
+              border-top: 22px solid #070707;
+          }
+          &::after {
+              border-top: 22px solid white;
+              top: 110px;
+          }
+        }
+        &:nth-child(3) {
+            margin-left: 194px;
+            &::before, &::after{
+                content: '';
+                top: 95px;
+                left: 35px;
+                position: absolute;
+                border: 22px solid transparent;
+                border-top: 22px solid #070707;
+            }
+            &::after {
+              border-top: 22px solid white;
+              top: 92px;
+            }
+        }
+       
+        &:last-child{
+          margin-bottom: 97px;
+        }
+
+    }
+}
+
+

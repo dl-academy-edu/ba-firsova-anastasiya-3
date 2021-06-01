@@ -1,0 +1,75 @@
+.skills{
+    text-align: center;
+
+    &__title{
+      font-weight: bold;
+      font-size: 34px;
+      line-height: 41px;
+      margin: 50px auto 0;
+    }
+
+    &__desc{
+      font-style: normal;
+      font-weight: 500;
+      margin: 20px auto 0;
+    }
+
+    &__list{
+      padding: 0px;
+      display: flex;
+      list-style: none;
+      margin: 50px auto 112px;
+      max-width: 1000px;
+      align-items: center;
+    }
+
+    &__text{
+      margin-top:  20px;
+    }
+
+    &__progress{
+      display: flex;
+      margin-top: 20px;
+    }
+    
+    &__item{
+      margin-right: 25px;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+
+    .progress__txt{
+      margin-right: 10px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+  .skills{
+      &__list{
+          max-width: 648px;
+      }
+      &__item:last-child{
+          margin-top: 44px;
+      }
+  }
+}
+
+@media(max-width:768px){
+  .skills{
+      &__list{
+          max-width: 320px;
+      }
+      &__item{
+          margin-top: 44px;
+          &:nth-child(1){
+              margin-top: 0;
+          }
+          
+          &:nth-child(2){
+              margin-top: 0;
+          }
+      }
+  }
+}

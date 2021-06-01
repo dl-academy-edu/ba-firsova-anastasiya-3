@@ -1,0 +1,49 @@
+<div class="send-message__overlay"></div>
+<section class="send-message">
+    <h2 class="visually-hidden">Send message</h2>
+    <button type="button" class="send-message__btn">
+        <svg class="send-message__svg" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2.82861" width="32" height="4" rx="2" transform="rotate(45 2.82861 0)" fill="#828282"/>
+            <rect y="22.6289" width="32" height="4" rx="2" transform="rotate(-45 0 22.6289)" fill="#828282"/>
+        </svg>  
+    </button>
+    <form action="https://echo.htmlacademy.ru" method="POST" class="send-message__form">
+        <fieldset class="form__fieldset">
+            <div class="form__field">
+                <div class="form__wrapper">
+                    <label for="name-send-message" class="form__label">What is your name? *</label>
+                    <input name="name" type="text" id="name-send-message" class="form__input">
+                   
+                </div>
+                <div class="form__wrapper">
+                    <label for="subject-send-message" class="form__label">Message subject *</label>
+                    <input name="subject" type="text" id="subject-send-message" class="form__input">
+                    
+                </div>
+            </div>
+            <div class="form__field">
+                <div class="form__wrapper">
+                    <label for="email-send-message" class="form__label">Your Email *</label>
+                    <input name="email" type="email" id="email-send-message" class="form__input">
+                    
+                </div>
+                <div class="form__wrapper">
+                    <label for="phone-send-message" class="form__label">Your mobile phone *</label>
+                    <input name="phone" type="tel" id="phone-send-message" class="form__input">
+                    
+                </div>
+            </div>
+            <div class="form__wrapper">
+                <label for="textarea" class="form__label">Your mobile phone *</label>
+               <textarea id="textarea" cols="30" rows="10" class="form__input"></textarea>
+               
+            </div>
+            
+            <div class="form__wrap">
+                <input type="checkbox" id="checkbox-send-message" class="form__input visually-hidden">
+                <label for="checkbox-send-message" class="form__label">Clicking on the button, you consent to the processing of your personal data.</label>
+            </div>
+            <button type="submit" class="form__button">Send</button>
+        </fieldset>
+    </form>
+</section>  

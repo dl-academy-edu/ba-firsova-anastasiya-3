@@ -1,0 +1,21 @@
+.main{
+  margin-top: 40px;
+
+  &__wrapper{
+    display: flex;
+  }
+
+  &__title{
+    margin-right: 40px;
+    max-width: 280px;
+    font-size: 47px;
+    line-height: 57px;
+    color: #070707;
+    margin-top: 0;
+  }
+
+  &__desc{
+    margin-top: 63px;
+    max-width: 226px;
+  }
+}
