@@ -1,0 +1,42 @@
+.pagination{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+
+    &__list{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+    }
+
+    &__item{
+        margin-right: 10px;
+
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+
+    &__button{
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        color: #E5E5E5;
+        border: 0;
+        background-color: transparent;
+        &_active{
+            color: #000000;
+        }
+    }
+    &__control{
+        width: 42px;
+        height: 42px;
+        padding-top: 5px;
+        padding-left: 5px;
+        border: 2.5px solid #070707;
+        box-sizing: border-box;
+        border-radius: 21px;
+        background-color: transparent;
+    }
+}

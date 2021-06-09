@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+    <link href="/common.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/static/fonts/fonts.css"/>
+    <link rel="shortcut icon" href="/static/images/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My blog</title>
+  </head>
+  <body>
+    @@include('header/index.html')
+    <main>
+      <section class="blog container">
+        <h1 class="blog__title">My blog</h1>
+        @@include('form-blog/index.html')
+        @@include('posts/index.html') 
+        @@include('pagination/index.html') 
+      </section>
+    </main>
+    @@include('footer/index.html')
+    @@include('button-to-top/index.html')
+    <script src="index.js"></script>
+  </body>
+</html>
+
+  

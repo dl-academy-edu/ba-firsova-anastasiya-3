@@ -1,0 +1,75 @@
+.profile{
+    margin-top: 40px;
+
+    &__title{
+        margin: 40px 17px 0; 
+        font-size: 47px;
+        line-height: 57px;
+        color: #070707;
+    }
+
+    &__data{
+        margin-top: 40px;
+        margin-bottom: 93px;
+        display: flex;
+    }
+
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        margin-left: 85px;
+    }
+    
+    &__wrap{
+        display: flex;
+        margin-top: 22px;
+        &:first-child{
+            margin-top: 0;
+        }
+    }
+
+    &__desc{
+        margin-right: 15px;
+        color: #070707;
+    }
+
+    &__text{
+        font-weight: 500;
+        color: #070707;
+    }
+
+    &__button{
+        margin-top: 18px;
+        padding: 10px 19px;
+        text-align: center;
+        background:transparent;
+        border: 2.5px solid #070707;
+        box-sizing: border-box;
+        border-radius: 30px;
+        max-width: 195px;
+
+        &:nth-child(7){
+            margin-top: 24px;
+        }
+        &:nth-child(9){
+           max-width: 165px;
+        }
+    }
+
+}
+
+.hidden{
+    display: block;
+}
+
+@media (max-width:767px){
+    .main {
+        max-width: 320px;
+        &__title{
+            margin-right: 0;
+        }
+        &__desc{
+            margin-top: 20px;
+        }
+    }
+}

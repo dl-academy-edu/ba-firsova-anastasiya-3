@@ -1,0 +1,202 @@
+.register{
+    display: block;
+    position: fixed;
+    top: 118px;
+    left: 50%;
+    margin-left: -340px;
+    z-index: 2;
+
+    &__overlay{
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(246, 246, 246, 0.99);
+        z-index: 1;
+
+        &_show{
+            display: block;
+        }
+    }
+
+    &__btn{
+        border: 0;
+        background: transparent;
+        position: absolute;
+        top: 0;
+        right: -40px;
+    }
+
+    &__svg{
+        &:hover rect{
+            cursor: pointer;
+            fill:#070707;
+        }
+        &:active rect{
+            cursor: pointer;
+            fill:#070707;
+            opacity: 0.2;
+        }
+    }
+
+    &__form{
+        max-width: 680px;
+        padding: 40px;
+        background-color: #FFFFFF;
+        border: 2.5px solid #070707;
+        box-sizing: border-box; 
+        position: relative;
+    }
+
+    .form{
+        &__fieldset{
+            margin: 0px;
+            padding: 0px;
+            border: 0px;
+        }
+
+        &__field{
+            display: flex;
+            margin: 20px 0;
+        }
+
+        &__field .form__input{
+            max-width: 290px;
+        }
+
+        &__wrapper{
+            display: flex;
+            flex-direction: column;
+
+
+            &:first-child{
+
+                margin-right: 20px;
+            }
+        }
+
+        &__input{
+            margin-top: 6px;
+            background-color: #FFFFFF;
+            border: 2.5px solid #E5E5E5;
+            box-sizing: border-box;
+            width: 600px;
+            min-height: 50px;
+            padding: 10px;
+
+            &:hover{
+                border: 2.5px solid #828282;
+                cursor:pointer;
+            }
+
+            &:focus{
+                border: 2.5px solid #070707; 
+            }
+
+            &_error{
+                border: 2.5px solid #EB3617;
+            }
+        }
+
+        &__label{
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            color: #070707;
+
+            &_error{
+                color: #EB3617;
+            }
+        }
+
+        &__button{
+            margin-top: 20px;
+            padding: 10px 19px;
+            font-weight: bold;
+            line-height: 22px;
+            text-align: center;
+            border: 2.5px solid #070707;
+            box-sizing: border-box;
+            border-radius: 30px;
+            background: transparent;
+        }
+
+       &__wrap {
+        margin-top: 20px;
+
+        .form__label{
+            position: relative;
+            margin-left: 34px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+ 
+             &::before{
+                 content: '';
+                 position: absolute;
+                 top: 0;
+                 left: -34px;
+                 width: 19px;
+                 height: 19px;
+                 border: 2px solid #070707;
+                 box-sizing: border-box;
+                 border-radius: 3px;
+             }
+ 
+             &:after{
+                 content: '';
+                 position: absolute;
+                 left: -31px;
+                 top: 2px;
+                 width: 14px;
+                 height: 14px;
+                 background-image: url('/static/images/check.svg');
+                 background-repeat: no-repeat;
+                 opacity: 0;
+             }  
+             
+             &:hover{
+                 opacity: 0.5;
+                 cursor: pointer;
+             }
+        }
+       }
+
+       &__wrap .form__input{
+            &:checked + .form__label::after {
+            opacity: 1;
+            }
+       }
+
+    }
+  
+}
+
+.hidden{
+    display: none;
+}
+
+@media(min-width: 767px) and (max-width: 1023px){
+    .register{
+        top: 241px;
+        max-width: 768px;
+    }
+}
+
+@media(max-width: 767px){
+    .register{
+        max-width: 320px;
+        &__form{
+            width: 100%;
+        }
+        .form__input{
+            max-width: 280px;
+            border: none;
+        }
+        .form__field .form__input{
+            max-width: 280px;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+<div class="data__overlay hidden"></div> 
+<section class="data hidden">
+    <h2 class="visualy-hidden">data</h2>
+    <button type="button" class="data__btn">
+        <svg class="data__svg" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2.82861" width="32" height="4" rx="2" transform="rotate(45 2.82861 0)" fill="#828282"/>
+            <rect y="22.6289" width="32" height="4" rx="2" transform="rotate(-45 0 22.6289)" fill="#828282"/>
+        </svg>  
+    </button>
+    <form name="editingForm" action="https://echo.htmlacademy.ru" method="POST" class="data__form">
+        <fieldset class="form__fieldset">
+            <div class="form__wrapper">
+                <input type="email" id="email-input" class="form__input">
+                <label for="email-input" class="form__input">Email</label>
+            </div>
+            <div class="form__field">
+                <div class="form__wrapper">
+                    <input type="text" id="name-input" class="form__input">
+                    <label for="name-input" class="form__input">Name</label>
+                </div>
+                <div class="form__wrapper">
+                    <input type="text" id="surname-input" class="form__input">
+                    <label for="surname-input" class="form__label">Surname</label>
+                </div>
+            </div>
+            <div class="form__field">
+                <div class="form__wrapper">
+                    <input type="password" id="password-input" class="form__input">
+                    <label for="password-input" class="form__input">Password</label>
+                </div>
+                <div class="form__wrapper">
+                    <input type="password" id="repeat-password-input" class="form__input">
+                    <label for="repeat-password-input" class="form__input">Repaet password</label>
+                </div>
+            </div>
+            <div class="form__field">
+                <div class="form__wrapper">
+                    <input type="text" id="location-input" class="form__input">
+                    <label for="location-input" class="form__input">Location</label>
+                </div>
+                <div class="form__wrapper">
+                    <input type="number" id="age-input" class="form__input">
+                    <label for="age-input" class="form__input">Age</label>
+                </div>
+            </div>
+            <div class="form__wrapper">
+                <input type="file" id="picture" class="form__input visualy-hidden">
+                <label for="picture" class="form__label">Profile picture</label>
+            </div>
+            <button type="submit" class="form__button">Submit changes</button>
+        </fieldset>
+    </form>
+</section>  

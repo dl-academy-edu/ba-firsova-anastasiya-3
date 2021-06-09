@@ -1,0 +1,128 @@
+.sign-in{
+    display: block;
+    position: fixed;
+    top: 225px;
+    left: 50%;
+    margin-left: -185px;
+    z-index: 2;
+
+    &__overlay{
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(246, 246, 246, 0.99);
+        z-index: 1;
+
+    }
+
+    &__btn{
+        border: 0;
+        background: transparent;
+        position: absolute;
+        top: 0;
+        right: -40px;
+    }
+
+    &__svg{
+        &:hover rect{
+            cursor: pointer;
+            fill:#070707;
+        }
+        &:active rect{
+            cursor: pointer;
+            fill:#070707;
+            opacity: 0.2;
+        }
+    }
+    
+    &__form{
+        max-width: 370px;
+        padding: 40px;
+        background-color: #FFFFFF;
+        border: 2.5px solid #070707;
+        box-sizing: border-box;
+    }
+    .form{
+        &__fieldset{
+            margin: 0px;
+            padding: 0px;
+            border: 0px;
+        }
+        &__wrapper{
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+
+            &:first-child{
+                margin-top: 0;
+            }
+        }
+        &__input{
+            margin-top: 6px;
+            background-color: #FFFFFF;
+            border: 2.5px solid #E5E5E5;
+            box-sizing: border-box;
+
+            &:hover{
+                border: 2.5px solid #828282;
+                cursor:pointer;
+            }
+
+            &:focus{
+                border: 2.5px solid #070707; 
+            }
+
+            &_error{
+                border: 2.5px solid #EB3617;
+            }
+        }
+
+        &__label{
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            color: #070707;
+
+            &_error{
+                color: #EB3617;
+            }
+        }
+
+        &__button{
+            padding: 10px 19px;
+            margin-top: 30px;
+            font-weight: bold;
+            line-height: 22px;
+            text-align: center;
+            border: 2.5px solid #070707;
+            background: transparent;
+            box-sizing: border-box;
+            border-radius: 30px;
+        }
+    }
+
+}
+
+
+@media(min-width: 768px) and (max-width: 1023px){
+    .sign-in{
+        top: 353px;
+    }
+}
+
+@media(max-width: 767px){
+    .sign-in{
+        max-width: 320px;
+        &__form{
+            width: 100%
+        }
+        .form{
+            &__input{
+                max-width: 280px;
+            }
+        }
+    }
+}

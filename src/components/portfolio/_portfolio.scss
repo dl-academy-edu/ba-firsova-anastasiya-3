@@ -1,0 +1,86 @@
+.portfolio{
+    background-color: #F6F6F6;
+
+    &__title{
+      margin-top: 60px;
+      font-weight: bold;
+      font-size: 34px;
+      line-height: 41px;
+      text-align: center;
+      color: #070707;
+    }  
+      
+    &__wrapper{
+      margin-top: 50px;
+      margin-bottom: 60px;
+      position: relative;
+      margin: 0 auto;
+      max-width: 1000px;
+    }
+
+    &__img{
+      margin-top: 26px;
+      margin-bottom: 60px;
+    }
+
+    &__control_back{
+        border: 0;
+        background-color: transparent;
+        position: absolute;
+        top: 280px;
+        left: 30px;
+    }
+
+    &__control_forward{
+      border: 0;
+      background-color: transparent;
+      position: absolute;
+      top: 280px;
+      right: 30px;
+    }    
+
+    &__content{
+      margin-bottom: 60px;
+      position: absolute;
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-width: 1000px;
+      min-height: 150px;
+      background-color: rgba(7, 7, 7, 0.85);
+      z-index: 2;
+    }
+
+    &__link{
+      margin: 31px auto 0;
+      font-weight: 500;
+      text-align: center;
+      color: #FFFFFF;
+      border-bottom: 1px dashed #FFFFFF;
+      box-sizing: border-box;
+      max-width: 309px;
+    }
+
+    &__text{
+      margin: 15px auto 0;
+      max-width: 400px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+      color: #FFFFFF;
+    }
+
+}
+.swiper-pagination{
+  display: none;
+}
+
+.swiper-button-prev::after{
+  color: #070707;
+}
+
+.swiper-button-next::after{
+  color: #070707;
+}

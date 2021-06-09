@@ -1,0 +1,64 @@
+<div class="register__overlay hidden"></div>
+<section class="register hidden">
+    <h2 class="visually-hidden">Register</h2>
+    <button type="button" class="register__btn">
+        <svg class="register__svg" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2.82861" width="32" height="4" rx="2" transform="rotate(45 2.82861 0)" fill="#828282"/>
+            <rect y="22.6289" width="32" height="4" rx="2" transform="rotate(-45 0 22.6289)" fill="#828282"/>
+        </svg>  
+    </button>
+    <form name="registerForm" action="https://echo.htmlacademy.ru" method="POST" class="register__form">
+        <fieldset class="form__fieldset">
+            <div class="form__wrapper">
+                <label for="email-register" class="form__label">Email *</label>
+                <input name="email" type="email" id="email-register" class="form__input">
+                
+            </div>
+            <div class="form__field">
+                <div class="form__wrapper">
+                    <label for="name-register" class="form__label">Name *</label>
+                    <input name="name" type="text" id="name-register" class="form__input">
+                    
+                </div>
+                <div class="form__wrapper">
+                    <label for="surname-register" class="form__label">Surname *</label>
+                    <input name="surname" type="text" id="surname-register" class="form__input">
+                   
+                </div>
+            </div>
+            <div class="form__field">
+                <div class="form__wrapper">
+                    <label for="password-register" class="form__label">Password *</label>
+                    <input name="password" type="password" id="password-register" class="form__input">
+                   
+                </div>
+                <div class="form__wrapper">
+                    <label for="repeat-password-register" class="form__label">Repaet password *</label>
+                    <input name="password" type="password" id="repeat-password-register" class="form__input">
+                    
+                </div>
+            </div>
+            <div class="form__field">
+                <div class="form__wrapper">
+                    <label for="location-register" class="form__label">Location *</label>
+                    <input name="location" type="text" id="location-register" class="form__input">
+                    
+                </div>
+                <div class="form__wrapper">
+                    <label for="age-register" class="form__label">Age *</label>
+                    <input name="age" type="number" id="age-register" class="form__input">
+                    
+                </div>
+            </div>
+            <div class="form__wrap">
+                <input name="accept" type="checkbox" id="checkbox" class="form__input visually-hidden">
+                <label for="checkbox" class="form__label">Clicking on the button, you consent to the processing of your personal data.</label>
+            </div> 
+            <button type="submit" class="form__button">Sign in</button>
+            <div class="preloader hidden">
+                <div class="loader"></div>
+            </div>
+        </fieldset>
+        
+    </form>
+</section>  
