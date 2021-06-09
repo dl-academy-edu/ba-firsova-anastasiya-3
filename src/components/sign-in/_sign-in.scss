@@ -1,17 +1,13 @@
 .sign-in{
-    display: none;
+    display: block;
     position: fixed;
     top: 225px;
     left: 50%;
     margin-left: -185px;
     z-index: 2;
 
-    &_open {
-        display: block;
-    }
-
     &__overlay{
-        display: none;
+        display: block;
         position: fixed;
         top: 0;
         left: 0;
@@ -20,9 +16,6 @@
         background-color: rgba(246, 246, 246, 0.99);
         z-index: 1;
 
-        &_show{
-            display: block;
-        }
     }
 
     &__btn{

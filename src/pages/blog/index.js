@@ -1,5 +1,3 @@
-
-
 (function(){
     const buttonToTop = document.querySelector('.button-to-top');
     if(buttonToTop){

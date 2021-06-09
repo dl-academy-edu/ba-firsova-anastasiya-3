@@ -66,3 +66,14 @@
         }
   }
 }
+
+@media(max-width:767px) {
+    .slider{
+    &__wrapper{
+        height: 465px;
+        margin: 0 auto;
+        overflow: hidden;
+        max-width: 280px;
+    }
+}
+}

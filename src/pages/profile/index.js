@@ -1,75 +1,52 @@
-var password = document.querySelector('.password');
-var overlayPassword = document.querySelector('.password__overlay');
-var passwordButton = document.querySelector('.btn_js');
-var passwordCloseButton = password.querySelector('.password__btn');
-var input = password.querySelector('.form__input')
+const profileImg = document.querySelector('.profile__img_js');
+const profileName = document.querySelector('.profile__name_js');
+const profileSurname = document.querySelector('.profile__surname_js');
+const profileEmail = document.querySelector('.profile__email_js');
+const profileLocation = document.querySelector('.profile__location_js');
+const profileAge = document.querySelector('.profile__age_js');
 
-passwordButton.addEventListener('click', function(){
-    password.classList.add('password_open');
-    overlayPassword.classList.add('password__overlay_show');
+const buttonModalEditing = document.querySelector('.profile__button_js');
+const modalEditing = document.querySelector('.data');
+const overlayEditing = document.querySelector('.data_overlay');
+const buttonCloseModalEditing = modalEditing.querySelector('.data__btn');
+
+const editingForms = document.forms.editingForm;
+
+function changeData(e){
+  e.preventDefault();
+}
+
+buttonModalEditing.addEventListener('click', ()=>{
+  interactionModal(modalEditing);
+});
+
+buttonCloseModalEditing.addEventListener('click', ()=>{
+  interactionModal(modalEditing);
+});
+
+editingForms.addEventListener('submit', (e) => {
+  changeData(e);
+});
+
+buttonModalEditing.addEventListener('click', function(){
+  overlayEditing.classList.remove('hidden');
     input.focus();
 })
 
-passwordCloseButton.addEventListener('click', function(){
-    password.classList.remove('password_open');
-    overlayPassword.classList.remove('password__overlay_show');
+buttonCloseModalEditing.addEventListener('click', function(){
+  overlayEditing.classList.add('hidden');
 })
 
 window.addEventListener('keydown', function(evt){
     if (evt.code === "Escape") {
-        if (password.classList.contains('password_open')){
-            password.classList.remove('password_open');
-            overlay.classList.remove('password__overlay_show');
-        }
-    }
-})
-
-var data = document.querySelector('.data');
-var overlay = document.querySelector('.data__overlay');
-var dataButton = document.querySelector('.button_js');
-var dataCloseButton = data.querySelector('.data__btn');
-var input = data.querySelector('.form__input')
-
-dataButton.addEventListener('click', function(){
-    data.classList.add('data_open');
-    overlay.classList.add('data__overlay_show');
-    input.focus();
-})
-
-dataCloseButton.addEventListener('click', function(){
-    data.classList.remove('data_open');
-    overlay.classList.remove('data__overlay_show');
-})
-
-window.addEventListener('keydown', function(evt){
-    if (evt.code === "Escape") {
-        if (data.classList.contains('data_open')){
-            data.classList.remove('data_open');
-            overlay.classList.remove('data__overlay_show');
+        if (!modalEditing.classList.contains('hidden')){
+            modalEditing.classList.add('hidden');
+            overlayEditing.classList.add('hidden');
         }
     }
 });
 
-(function(){
-    const buttonToTop = document.querySelector('.button-to-top');
-    if(buttonToTop){
-        buttonToTop.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth',
-            });
-            buttonToTop.classList.add('button-to-top_hidden');
-        });
-    
-        window.addEventListener('scroll', () => {
-            if(window.pageYOffset > 1500) {
-                buttonToTop.classList.remove('button-to-top_hidden');
-            } else {
-                buttonToTop.classList.add('button-to-top_hidden');
-            }
-            });
-    }
-})();
+
 
 function getFormData(form){
     let data = {};
@@ -213,4 +190,25 @@ function emailCheck(email) {
               setErrorsToForm(form, error);
             });
     };
+})();
+
+(function(){
+  const buttonToTop = document.querySelector('.button-to-top');
+  if(buttonToTop){
+      buttonToTop.addEventListener('click', () => {
+          window.scrollTo({
+              top: 0,
+              behavior: 'smooth',
+          });
+          buttonToTop.classList.add('button-to-top_hidden');
+      });
+  
+      window.addEventListener('scroll', () => {
+          if(window.pageYOffset > 1500) {
+              buttonToTop.classList.remove('button-to-top_hidden');
+          } else {
+              buttonToTop.classList.add('button-to-top_hidden');
+          }
+          });
+  }
 })();

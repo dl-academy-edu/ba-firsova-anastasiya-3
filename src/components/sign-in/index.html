@@ -1,5 +1,5 @@
-<div class="sign-in__overlay"></div>
-<section class="sign-in">
+<div class="sign-in__overlay hidden"></div>
+<section class="sign-in hidden">
     <h2 class="visually-hidden">Sign In</h2>
     <button type="button" class="sign-in__btn">
         <svg class="sign-in__svg" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -7,7 +7,7 @@
             <rect y="22.6289" width="32" height="4" rx="2" transform="rotate(-45 0 22.6289)" fill="#828282"/>
         </svg>  
     </button>
-    <form name="signIn" action="https://echo.htmlacademy.ru" method="POST" class="sign-in__form">
+    <form name="signInForm" action="https://echo.htmlacademy.ru" method="POST" class="sign-in__form">
        <fieldset class="form__fieldset">
         <div class="form__wrapper">
             <label for="email-sign-in" class="form__label">Email *</label> 
@@ -20,6 +20,9 @@
             
         </div>
         <button type="submit" class="form__button">Log in</button>
+        <div class="preloader hidden">
+            <div class="loader"></div>
+        </div>
        </fieldset>
         
     </form>

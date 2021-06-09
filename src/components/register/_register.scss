@@ -1,17 +1,13 @@
 .register{
-    display: none;
+    display: block;
     position: fixed;
     top: 118px;
     left: 50%;
     margin-left: -340px;
     z-index: 2;
 
-    &_open{
-        display: block;
-    }
-
     &__overlay{
-        display: none;
+        display: block;
         position: fixed;
         top: 0;
         left: 0;
@@ -50,7 +46,8 @@
         padding: 40px;
         background-color: #FFFFFF;
         border: 2.5px solid #070707;
-        box-sizing: border-box;
+        box-sizing: border-box; 
+        position: relative;
     }
 
     .form{
@@ -175,6 +172,10 @@
 
     }
   
+}
+
+.hidden{
+    display: none;
 }
 
 @media(min-width: 767px) and (max-width: 1023px){

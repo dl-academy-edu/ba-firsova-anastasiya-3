@@ -72,4 +72,50 @@
     }
 }
 
+@media (max-width:767px) {
+  .about-me{
+    max-width: 278px;
+    &__desc{
+      margin-right: 0px;
+      max-width: 249px;
+      &::before, &::after{
+        content: '';
+        top: 158px;
+        left: 215px;
+      }
+      &::after {
+        top: 155px;
+       }
+       &:nth-child(2){
+          margin-top: 30px;
+          max-width: 249px;
+          &::before, &::after{
+            content: '';
+            top: 200px;
+            left: 211px;
+        }
+        &::after {
+            top: 198px;
+        }
+      }
+      &:nth-child(3) {
+        margin-left: 0;
+        max-width: 249px;
+          &::before, &::after{
+              content: '';
+              top: 179px;
+              left: 213px;;
+          }
+          &::after {
+            top: 176px;
+          }
+      }
+     
+      &:last-child{
+        margin-bottom: 80px;
+      }
+
+  }
+  }
+}
 

@@ -17,7 +17,7 @@
         <section class="profile">
           <h2 class="profile__title">My profile</h2>
           <div class="profile__data">
-            <img src="/static/images/no-photo.jpg" alt="profile picture of the owner">
+            <img class="profile__img_js" src="/static/images/no-photo.jpg" alt="profile picture of the owner">
             <div class="profile__wrapper">
               <div class="profile__wrap">
                 <p class="profile__desc">Name:</p>
@@ -44,7 +44,7 @@
                 <p class="profile__text">23</p>
               </div>
                 <button type="button" class="profile__button btn_js">Change password</button>
-                <button type="button" class="profile__button button_js">Change other data</button>
+                <button type="button" class="profile__button profile__button_js">Change other data</button>
                 <button type="button" class="profile__button">Delete account</button>
             </div>
           </div>
@@ -54,9 +54,8 @@
       @@include('password/index.html')
       @@include('data/index.html')
       @@include('button-to-top/index.html')
+      <script src="../common.js"></script>
       <script src="index.js"></script>
     </body>
   </html>
-  
-      </div>
       
